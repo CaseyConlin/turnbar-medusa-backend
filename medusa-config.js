@@ -36,7 +36,7 @@ const DB_DATABASE = process.env.DB_DATABASE;
 
 const DATABASE_URL =
   `postgres://${DB_USERNAME}:${DB_PASSWORD}` +
-  `@${DB_HOST}:${DB_PORT}/${DB_DATABASE}`;
+  `@${DB_HOST}:${DB_PORT}/${DB_DATABASE}?ssl=true`;
 
 // const DATABASE_URL =
 //   process.env.DATABASE_URL || "postgres://localhost/medusa-starter-default";
