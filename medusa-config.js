@@ -34,9 +34,7 @@ const DB_HOST = process.env.DB_HOST;
 const DB_PORT = process.env.DB_PORT;
 const DB_DATABASE = process.env.DB_DATABASE;
 
-const DATABASE_URL =
-  `postgres://${DB_USERNAME}:${DB_PASSWORD}` +
-  `@${DB_HOST}:${DB_PORT}/${DB_DATABASE}`;
+const DATABASE_URL = `postgres://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_DATABASE}`;
 
 // const DATABASE_URL =
 //   process.env.DATABASE_URL || "postgres://localhost/medusa-starter-default";
@@ -94,7 +92,7 @@ const projectConfig = {
 module.exports = {
   projectConfig: {
     // ...
-    database_extra: { ssl: { rejectUnauthorized: false } },
+    // database_extra: { ssl: { rejectUnauthorized: false } },
     redis_url: process.env.REDIS_URL,
     database_extra:
       process.env.NODE_ENV !== "development"
