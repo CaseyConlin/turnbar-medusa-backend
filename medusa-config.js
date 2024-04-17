@@ -96,6 +96,10 @@ module.exports = {
     // ...
     database_extra: { ssl: { rejectUnauthorized: false } },
     redis_url: process.env.REDIS_URL,
+    database_extra:
+      process.env.NODE_ENV !== "development"
+        ? { ssl: { rejectUnauthorized: false } }
+        : {},
   },
   plugins,
   modules,
