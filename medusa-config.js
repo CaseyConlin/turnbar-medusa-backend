@@ -102,7 +102,7 @@ module.exports = {
     // database_extra: { ssl: { rejectUnauthorized: false } },
     admin_cors: ADMIN_CORS,
     // Uncomment the following lines to enable REDIS
-    redis_url: REDIS_URL,
+    // redis_url: REDIS_URL,
 
     database_extra:
       process.env.NODE_ENV !== "development"
