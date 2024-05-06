@@ -6672,6 +6672,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tanstack/query-core@npm:5.35.1":
+  version: 5.35.1
+  resolution: "@tanstack/query-core@npm:5.35.1"
+  checksum: 10c0/c991efeb29ec42f9aadf43130dac5e4e9e0651880ef96e0cb5f0dc3224b9b919b34f0e4af53231a7de32582aa7ba801ed6683ed7448e41e7b2a344803f08f3fe
+  languageName: node
+  linkType: hard
+
 "@tanstack/react-query@npm:4.22.0":
   version: 4.22.0
   resolution: "@tanstack/react-query@npm:4.22.0"
@@ -6688,6 +6695,17 @@ __metadata:
     react-native:
       optional: true
   checksum: 10c0/aacb071935c20ec695adfce7594649b6a7683640b82b232727f1b000bb871b6e99bb98bf47b9617eb76829d6b5822a6c98d3cefb1ede90a69cc52c2c79488d14
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-query@npm:5.35.1":
+  version: 5.35.1
+  resolution: "@tanstack/react-query@npm:5.35.1"
+  dependencies:
+    "@tanstack/query-core": "npm:5.35.1"
+  peerDependencies:
+    react: ^18.0.0
+  checksum: 10c0/80b3d4e295b05171e34f522c1856bcd561c58963e7661ae2340f3406a3097b7c9896d4f67005876c634ce1d808791498a987b200f00341e6df9fcc862060e6ad
   languageName: node
   linkType: hard
 
@@ -13329,7 +13347,7 @@ __metadata:
     "@medusajs/medusa": "npm:latest"
     "@medusajs/medusa-cli": "npm:latest"
     "@stdlib/number-float64-base-normalize": "npm:0.0.8"
-    "@tanstack/react-query": "npm:4.22.0"
+    "@tanstack/react-query": "npm:5.35.1"
     "@types/express": "npm:^4.17.13"
     "@types/jest": "npm:^27.4.0"
     "@types/mime": "npm:1.3.5"
